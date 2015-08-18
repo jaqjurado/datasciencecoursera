@@ -1,6 +1,6 @@
 # The Raw Data
 
-The raw data was obtained from from accelerometers from the Samsung Galaxy S smartphone. This was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+The raw data was obtained from from accelerometers from the Samsung Galaxy S smartphone. This was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Acopy of the raw data is also provided in this repository
 
 There are 2 sources for the raw data, the test data set and the training dataset. For each set, there features, activity id and subject id data are stored in 3 seperate files. These data has generic column names (e.g. V1, V2... etc)
 
