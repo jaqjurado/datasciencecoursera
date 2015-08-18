@@ -52,16 +52,16 @@ The script aims to merge these training and test dataset into a single tidy data
    * Run the script and assign the output to a variable - you can inspect the output
    * Optionally you can write the output to a text or a csv file
    
-   For example
-   {code}
+   Example
+  ```
    source('~/workspace/datasciencecoursera/gettingAndCleaningData/run_analysis.R')
    output <- run_analysis()
    write.table(output, file="output.text", row.names=FALSE)
    write.csv(output, file="output.csv", row.names=FALSE)
-   {code}
+   ```
 
 
 # The Output
 
-blah
+The output of the analysis will have a mean summary of all the 79 mean() and std() features for each 30 subject and 6 activity. The ouput would have a dimension of 180 rows (30 dubject X 6 activity) and 81 columns (subject, activity and the 79 features)
 
