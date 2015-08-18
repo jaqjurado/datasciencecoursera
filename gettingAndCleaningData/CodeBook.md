@@ -6,7 +6,7 @@ There are 2 sources for the raw data, the test data set and the training dataset
 
 Two sets of inertial signals data is also available but not used in this analysis.
 
-Features metrics are in _Hz_
+Features metrics are in **Hz**
 
 Detailed description of the the raw data used:
 
@@ -31,4 +31,7 @@ More detailed information of the raw data is provided in the source zip in the l
 The merging the test and train dataset would generate 10326 rows with 563 columns(561 feature + subject + activity)
 
 # The Summarized Data
+
+The summarized data only uses a subset of the merged dataset. For the summarized data we just used all features metrics that are mean() or std(). This was obtained by looking at the features.txt files to reference which features are means and standard deviation. Instead of using the column vector value as the column name, we referenced the features.txt file and uses the features name there as the column name. We also used the activity information in the activity_labels file to tranform the value of the activity IDs. The summarized data is the average of mean and standard deviation feature metrics  for each subject and activity combination.
+
 
