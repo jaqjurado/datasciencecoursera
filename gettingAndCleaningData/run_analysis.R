@@ -1,6 +1,7 @@
 run_analysis <- function(){
   
   library(plyr)
+  library(data.table)
   
 ## Read features, test and train files into tables
   features <- read.table("./UCI HAR Dataset/features.txt") 
