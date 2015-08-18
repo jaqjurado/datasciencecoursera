@@ -67,6 +67,9 @@ The script aims to merge these training and test dataset into a single tidy data
 
 The output of the analysis will have a mean summary of all the 79 mean() and std() features for each 30 subject and 6 activity. The ouput would have a dimension of 180 rows (30 dubject X 6 activity) and 81 columns (subject, activity and the 79 features)
 
+Sample output in text fromat: summary.txt
+Sample output in text fromat: summary.csv
+
 Snippet of the output
 ```
 > head(output)
