@@ -27,12 +27,39 @@ C) Supporting Data - additional information used
 The script aims to merge these training and test dataset into a single tidy dataset with descriptive column and summarize ONLY mean() and std() features by subject and activity.
 
 *Data Processing Steps*
-   * Read test files into data tables
-   * Read train files into data tables
+   * Read test files into data tables (feature (x), activity(y) and subject)
+   * Read train files into data tables (feature (x), activity(y) and subject)
    * Read feature file into a data table
    * Merge the test and train features data
    * Merge the test and train activitiy ID data
    * Merge the test and train subject data
+   * Get the index of the features.txt that has mean() and std() information
+   * Get the names of those index that has mean() and std() information
+   * Get subset of the merged feature data with only the mean() and std() information
+   * Rename subject column name to 'Subject'
+   * Rename activity column nam to 'Activity'
+   * Rename the feature columns with the feature name that you obtain from the features dataset
+   * Merge the subject, activit and features data
+   * Rename activity column values with the corresponding activity name from the activity labels file
+   * Order the combined dataset by Subject and Activity
+   * Summarize the data by getting the mean for each feature per Subject per Activity
+   * Return the summarized data
+
+*Running the script*
+   * Make sure the data folder is located in the working directory
+   * Make sure that the plyr and data.table package is installed
+   * Source the script
+   * Run the script and assign the output to a variable - you can inspect the output
+   * Optionally you can write the output to a text or a csv file
+   
+   For example
+   {code}
+   source('~/workspace/datasciencecoursera/gettingAndCleaningData/run_analysis.R')
+   output <- run_analysis()
+   write.table(output, file="output.text", row.names=FALSE)
+   write.csv(output, file="output.csv", row.names=FALSE)
+   {code}
+
 
 # The Output
 
