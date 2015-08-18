@@ -27,9 +27,12 @@ C) Supporting Data - additional information used
 The script aims to merge these training and test dataset into a single tidy dataset with descriptive column and summarize ONLY mean() and std() features by subject and activity.
 
 *Data Processing Steps*
-   # Read test files into data tables
-   # Read train files into data tables
-   # Read feature file into a data table
+   * Read test files into data tables
+   * Read train files into data tables
+   * Read feature file into a data table
+   * Merge the test and train features data
+   * Merge the test and train activitiy ID data
+   * Merge the test and train subject data
 
 # The Output
 
